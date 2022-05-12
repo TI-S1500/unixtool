@@ -732,17 +732,15 @@ main(int argc, char *argv[])
       || strncmp(argv[1], "-?", 2) == 0)
     {
       /* Handle command-line options */
-      printf("Lambda UnixTool v0.1\n");
+      printf("TI/LMI unixtool v0.0.1\n\n");
       printf(
-        "Usage: unixtool (command) (band image file name) [parameters]...\n");
-      printf(" Commands:\n");
-      printf("  help       Prints this information\n");
-      printf("  ls         Lists the given directory\n");
-      printf("             Parameters: (directory path)\n");
-      printf(
-        "  read       Reads the given file from the band image into the "
-        "given output file on the host\n");
-      printf("             Parameters: (source path) (destination name)\n");
+        "Usage: unixtool <command> <image file> [parameters]...\n\n");
+      printf(" Commands:\n\n");
+      printf("   help       Prints this information\n\n");
+      printf("   ls         Lists the given directory\n");
+      printf("                Parameters: <directory>\n\n");
+      printf("   read       Copy path from image file to destination\n");
+      printf("                Parameters: <source path> <destination>\n\n");
       return 0;
     }
 
